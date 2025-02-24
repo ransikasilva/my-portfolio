@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.b6699a18.css",
+    "main.js": "/my-portfolio/static/js/main.c5151681.js",
+    "static/media/slotzi.png": "/my-portfolio/static/media/slotzi.9177d9071c6661dddd2a.png",
+    "static/media/Plane Seat Management.png": "/my-portfolio/static/media/Plane Seat Management.e31ea7e7420a1915a622.png",
+    "static/media/pp.png": "/my-portfolio/static/media/pp.c4981e78ef34af0e2ba8.png",
+    "static/media/studenta.png": "/my-portfolio/static/media/studenta.940f2e08c881d28dce99.png",
+    "static/media/movie.jpg": "/my-portfolio/static/media/movie.6403c17500c06dc4571c.jpg",
+    "static/media/hand.jpeg": "/my-portfolio/static/media/hand.517cd23e6fc71484f9d3.jpeg",
+    "static/media/climeta.jpeg": "/my-portfolio/static/media/climeta.42588bf93583c4d16fca.jpeg",
+    "static/media/catdog.jpeg": "/my-portfolio/static/media/catdog.54895d2d77028b152d2d.jpeg",
+    "static/media/ticket.jpeg": "/my-portfolio/static/media/ticket.0fbac390e5d3963d419b.jpeg",
+    "static/media/pothole.jpeg": "/my-portfolio/static/media/pothole.179b8b2ec9dd2506a142.jpeg",
+    "index.html": "/my-portfolio/index.html",
+    "main.b6699a18.css.map": "/my-portfolio/static/css/main.b6699a18.css.map",
+    "main.c5151681.js.map": "/my-portfolio/static/js/main.c5151681.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6699a18.css",
+    "static/js/main.c5151681.js"
+  ]
+}
