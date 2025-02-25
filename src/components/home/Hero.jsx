@@ -1,6 +1,6 @@
-
+// components/home/Hero.jsx
 import React from 'react';
-import { Container, Typography, Box, Button } from '@mui/material';
+import { Container, Typography, Box, Button, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import profilePic from '../../assets/images/pp.png'; // Adjust the path based on your project structure
@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <Box sx={{ py: 8, backgroundColor: 'background.default', minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
       <Container maxWidth="lg">
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+        <Grid container spacing={3} alignItems="center">
           {/* Text Content */}
-          <Box>
+          <Grid item xs={12} md={7}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -44,6 +44,7 @@ const Hero = () => {
                   maxWidth: '800px',
                   mb: 4,
                   color: 'rgba(255,255,255,0.8)',
+                  fontSize: { xs: '1rem', md: '1.25rem' }
                 }}
               >
                 Software Engineering undergraduate with expertise in AI/ML, computer vision, and full-stack development.
@@ -59,28 +60,66 @@ const Hero = () => {
                   '&:hover': {
                     backgroundColor: 'rgba(0,255,0,0.1)',
                     borderColor: '#00ff00',
+                    boxShadow: '0 0 15px #00ff00',
                   },
                 }}
               >
                 See My Work
               </Button>
             </motion.div>
-          </Box>
+          </Grid>
+          
           {/* Profile Image */}
-          <Box sx={{ position: 'relative', width: '400px', height: '400px', flexShrink: 0, display: { xs: 'none', md: 'block' } }}>
-            <Box
-              component="img"
-              src={profilePic} // Ensure the path is correct
-              sx={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '50%',
-                position: 'relative',
-              }}
-            />
-          </Box>
-        </Box>
+          <Grid item xs={12} md={5} sx={{ display: 'flex', justifyContent: 'center', mt: { xs: 4, md: 0 } }}>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              style={{ position: 'relative' }}
+            >
+              <Box
+                sx={{
+                  position: 'relative',
+                  width: { xs: '320px', md: '520px' },
+                  height: { xs: '320px', md: '520px' },
+                }}
+              >
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    border: '2px solid #00ff00',
+                    boxShadow: '0 0 20px rgba(0,255,0,0.5)',
+                    animation: 'pulse 2s infinite',
+                    '@keyframes pulse': {
+                      '0%': { opacity: 0.8 },
+                      '50%': { opacity: 0.5 },
+                      '100%': { opacity: 0.8 },
+                    }
+                  }}
+                />
+                <Box
+                  component="img"
+                  src={profilePic}
+                  alt="Neethila Ransika Silva"
+                  sx={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '50%',
+                    padding: '4px',
+                    position: 'relative',
+                    zIndex: 1
+                  }}
+                />
+              </Box>
+            </motion.div>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );

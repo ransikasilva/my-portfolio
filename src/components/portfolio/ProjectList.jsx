@@ -50,7 +50,7 @@ const projects = [
   {
     title: "Real-Time Event Ticketing System",
     description: "High-performance ticketing system with real-time updates",
-    technologies: ["Java", "Spring Boot", "WebSocket", "SQL"],
+    technologies: [ "Spring Boot", "Angular", "WebSocket", "SQL"],
     image: ticketingImage,
     demo: "https://drive.google.com/file/d/1ginoLuXdlQQjsTBLhJdki1leWBgs3Tlo/view" 
   },

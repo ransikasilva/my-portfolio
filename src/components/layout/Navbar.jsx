@@ -1,12 +1,25 @@
+// components/layout/Navbar.jsx
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
+import { 
+  AppBar, 
+  Toolbar, 
+  Button, 
+  IconButton, 
+  Drawer, 
+  List, 
+  ListItem, 
+  ListItemText, 
+  Box, 
+  Typography 
+  // Removed: useTheme, useMediaQuery
+} from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
-
+  
   const navItems = [
     { text: 'Home', path: '/' },
     { text: 'Portfolio', path: '/portfolio' },
@@ -44,7 +57,7 @@ const Navbar = () => {
           Ransika
         </Button>
 
-        <div style={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent: 'center' }}>
+        <Box sx={{ display: { xs: 'none', sm: 'flex' }, flexGrow: 1, justifyContent: 'center' }}>
           {navItems.map((item) => (
             <Button
               key={item.text}
@@ -66,7 +79,7 @@ const Navbar = () => {
               {item.text}
             </Button>
           ))}
-        </div>
+        </Box>
       </Toolbar>
 
       <Drawer
@@ -79,18 +92,30 @@ const Navbar = () => {
         }}
         sx={{
           display: { xs: 'block', sm: 'none' },
-          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 },
+          '& .MuiDrawer-paper': { 
+            boxSizing: 'border-box', 
+            width: 240,
+            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+            borderRight: '1px solid rgba(0, 255, 0, 0.2)'
+          },
         }}
       >
+        <Box sx={{ p: 2, borderBottom: '1px solid rgba(0, 255, 0, 0.2)' }}>
+          <Typography variant="h6" sx={{ color: '#00ff00' }}>
+            Menu
+          </Typography>
+        </Box>
         <List>
           {navItems.map((item) => (
-            <ListItem 
-              button 
+            <ListItem
+              button
               key={item.text}
               component={Link}
               to={item.path}
               onClick={handleDrawerToggle}
               sx={{
+                borderBottom: '1px solid rgba(0, 255, 0, 0.1)',
+                color: location.pathname === item.path ? '#00ff00' : 'white',
                 '&:hover': {
                   bgcolor: 'rgba(0, 255, 0, 0.1)',
                 },
