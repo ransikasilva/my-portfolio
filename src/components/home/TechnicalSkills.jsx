@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const skillsData = [
   {
     category: "Programming Languages",
-    skills: ["Python", "Java", "JavaScript"],
+    skills: ["Python", "Java", "JavaScript","HTML","CSS"],
     icon: Code
   },
   {
@@ -17,7 +17,7 @@ const skillsData = [
   },
   {
     category: "Web Development",
-    skills: ["Flask", "React", "Angular", "Spring Boot"],
+    skills: ["Spring Boot", "Angular", "Flask", "Node", "React", "Express"],
     icon: Web
   },
   {
@@ -27,7 +27,7 @@ const skillsData = [
   },
   {
     category: "Design",
-    skills: ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
+    skills: ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator", "Figma"],
     icon: Palette
   }
 ];
