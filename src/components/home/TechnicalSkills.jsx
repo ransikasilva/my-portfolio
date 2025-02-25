@@ -35,7 +35,7 @@ const skillsData = [
 const TechnicalSkills = () => {
   return (
     <Box sx={{ py: 8, backgroundColor: 'background.default' }}>
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
         <Typography
           variant="h2"
           align="center"
@@ -47,12 +47,11 @@ const TechnicalSkills = () => {
         >
           Technical Skills
         </Typography>
-
-        <Grid container spacing={4}>
+        <Grid container spacing={3} justifyContent="center">
           {skillsData.map((category, index) => {
             const Icon = category.icon;
             return (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid item xs={12} sm={10} md={8} key={index}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -62,8 +61,7 @@ const TechnicalSkills = () => {
                   <Paper
                     elevation={3}
                     sx={{
-                      p: 3,
-                      height: '100%',
+                      p: 2.5,
                       backgroundColor: 'rgba(17, 17, 17, 0.8)',
                       border: '1px solid rgba(0, 255, 0, 0.2)',
                       '&:hover': {
@@ -72,10 +70,10 @@ const TechnicalSkills = () => {
                       },
                     }}
                   >
-                    <Box display="flex" alignItems="center" mb={2}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, justifyContent: 'center' }}>
                       <Icon
                         sx={{
-                          fontSize: 30,
+                          fontSize: 28,
                           color: 'primary.main',
                           mr: 1
                         }}
@@ -84,11 +82,12 @@ const TechnicalSkills = () => {
                         {category.category}
                       </Typography>
                     </Box>
-                    <Box display="flex" flexWrap="wrap" gap={1}>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, justifyContent: 'center' }}>
                       {category.skills.map((skill, skillIndex) => (
                         <Chip
                           key={skillIndex}
                           label={skill}
+                          size="medium"
                           sx={{
                             backgroundColor: 'rgba(0, 255, 0, 0.1)',
                             color: 'white',
