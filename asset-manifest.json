@@ -1,12 +1,17 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.b6699a18.css",
-    "main.js": "/my-portfolio/static/js/main.a0dcf335.js",
+    "main.js": "/my-portfolio/static/js/main.538c28eb.js",
     "static/media/slotzi.png": "/my-portfolio/static/media/slotzi.9177d9071c6661dddd2a.png",
+    "static/media/career-navigator.jpeg": "/my-portfolio/static/media/career-navigator.37ad4c4a12c2bd5c50b6.jpeg",
+    "static/media/coderally.jpeg": "/my-portfolio/static/media/coderally.23eed70c1268fdd7850d.jpeg",
     "static/media/Plane Seat Management.png": "/my-portfolio/static/media/Plane Seat Management.e31ea7e7420a1915a622.png",
+    "static/media/ieee-xtreme.jpeg": "/my-portfolio/static/media/ieee-xtreme.7af91b3b69c442fbe211.jpeg",
     "static/media/pp.png": "/my-portfolio/static/media/pp.c4981e78ef34af0e2ba8.png",
     "static/media/studenta.png": "/my-portfolio/static/media/studenta.940f2e08c881d28dce99.png",
     "static/media/movie.jpg": "/my-portfolio/static/media/movie.6403c17500c06dc4571c.jpg",
+    "static/media/algorithm-workshop.jpeg": "/my-portfolio/static/media/algorithm-workshop.dd33d0ce07a60ca089ac.jpeg",
+    "static/media/api-tour.jpeg": "/my-portfolio/static/media/api-tour.d692124a73bcd0f4e9e8.jpeg",
     "static/media/hand.jpeg": "/my-portfolio/static/media/hand.517cd23e6fc71484f9d3.jpeg",
     "static/media/climeta.jpeg": "/my-portfolio/static/media/climeta.42588bf93583c4d16fca.jpeg",
     "static/media/catdog.jpeg": "/my-portfolio/static/media/catdog.54895d2d77028b152d2d.jpeg",
@@ -14,10 +19,10 @@
     "static/media/pothole.jpeg": "/my-portfolio/static/media/pothole.179b8b2ec9dd2506a142.jpeg",
     "index.html": "/my-portfolio/index.html",
     "main.b6699a18.css.map": "/my-portfolio/static/css/main.b6699a18.css.map",
-    "main.a0dcf335.js.map": "/my-portfolio/static/js/main.a0dcf335.js.map"
+    "main.538c28eb.js.map": "/my-portfolio/static/js/main.538c28eb.js.map"
   },
   "entrypoints": [
     "static/css/main.b6699a18.css",
-    "static/js/main.a0dcf335.js"
+    "static/js/main.538c28eb.js"
   ]
 }
