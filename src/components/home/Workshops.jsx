@@ -11,7 +11,7 @@ import genAI from '../../assets/images/api-tour.jpeg';
 
 const workshopData = [
   {
-    title: "API & GenAI Tour 2025 (Pieces)",
+    title: "API & GenAI Tour 2025 (Postman & Pieces)",
     organizer: "Postman & Pieces for Developers",
     date: "January 2025",
     description: "Participated in this event to learn about APIs and Generative AI from industry experts. Earned Postman API Fundamentals Student Expert certification.",
@@ -19,7 +19,7 @@ const workshopData = [
     tags: ["GenAI", "API", "Certification"]
   },
   {
-    title: "CodeRally 5.0 Hackathon",
+    title: "CodeRally 5.0 Hackathon", 
     organizer: "IEEE Computer Society SBC of IIT",
     date: "2024",
     description: "Participated and won 1st place in this 24-hour competitive programming hackathon where tech passion met exceptional problem-solving skills.",
@@ -28,7 +28,7 @@ const workshopData = [
   },
   {
     title: "Advanced Algorithm Techniques Workshop",
-    organizer: "CodeRally & IEEE CS IIT",
+    organizer: "CodeRally & IEEE CS IIT", 
     date: "August 2024",
     description: "Enhanced algorithmic problem-solving skills in this interactive workshop focused on advanced coding techniques.",
     image: algorithmWorkshop,
@@ -37,25 +37,36 @@ const workshopData = [
   {
     title: "Career Navigator Workshop",
     organizer: "IEEE CS IIT & IndustPro",
-    date: "2024", 
-    description: "Participated in this career development workshop to gain insights on professional growth and industry requirements in tech. Learned lot from industry experts.",
+    date: "2024",
+    description: "Participated in this career development workshop to gain insights on professional growth and industry requirements in tech.",
     image: careerNavigator,
     tags: ["Career Development", "Professional Skills"]
   },
   {
     title: "IEEE Xtreme 18.0 Hackathon",
-    organizer: "IEEE SBC of IIT",
+    organizer: "IEEE SBC of IIT", 
     date: "October 2024",
     description: "Participated in this 24-hour global programming competition, solving complex algorithmic challenges and enhancing teamwork skills under tight time constraints.",
     image: ieeeXtreme,
     tags: ["Global Competition", "Team Coding", "Problem Solving"]
-  }  
+  }
 ];
 
 const Workshops = () => {
   return (
     <Box sx={{ py: 8, backgroundColor: 'rgba(0,0,0,0.7)' }}>
       <Container maxWidth="lg">
+        <Typography
+          variant="h2" 
+          align="center"
+          sx={{
+            mb: 6,
+            color: 'primary.main',
+            textShadow: '0 0 10px rgba(0,255,0,0.3)',
+          }}
+        >
+          Workshops & Tech Events
+        </Typography>
         <Grid container spacing={4}>
           {workshopData.map((workshop, index) => (
             <Grid item xs={12} md={4} key={index}>
@@ -71,7 +82,7 @@ const Workshops = () => {
                     height: '100%',
                     backgroundColor: 'rgba(17, 17, 17, 0.8)',
                     overflow: 'hidden',
-                    border: '1px solid rgba(0, 255, 0, 0.2)', 
+                    border: '1px solid rgba(0, 255, 0, 0.2)',
                     '&:hover': {
                       boxShadow: '0 0 20px rgba(0, 255, 0, 0.3)',
                       border: '1px solid rgba(0, 255, 0, 0.5)',
@@ -82,7 +93,7 @@ const Workshops = () => {
                 >
                   <Box
                     sx={{
-                      height: 250,
+                      height: 250, 
                       overflow: 'hidden',
                       position: 'relative'
                     }}
@@ -93,12 +104,12 @@ const Workshops = () => {
                       alt={workshop.title}
                       sx={{
                         width: '100%',
-                        height: '100%',
+                        height: '100%', 
                         objectFit: 'cover',
                       }}
                     />
                   </Box>
-
+                  
                   <Box sx={{ p: 3 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                       <Event sx={{ color: '#00ff00', mr: 1 }} />
@@ -106,28 +117,28 @@ const Workshops = () => {
                         {workshop.date}
                       </Typography>
                     </Box>
-
+                    
                     <Typography 
-                      variant="h5"
+                      variant="h5" 
                       component="h3"
                       color="#00ff00"
                       gutterBottom
                       sx={{ 
                         fontWeight: 'bold',
-                        fontSize: '1.5rem'  
+                        fontSize: '1.5rem'
                       }}
                     >
                       {workshop.title}
                     </Typography>
-
+                    
                     <Typography variant="subtitle1" color="text.secondary" gutterBottom>
                       {workshop.organizer}  
                     </Typography>
-
+                    
                     <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                       {workshop.description}
                     </Typography>
-
+                    
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                       {workshop.tags.map((tag, tagIndex) => (
                         <Chip
@@ -138,18 +149,18 @@ const Workshops = () => {
                             tag.includes("Hackathon") || tag.includes("Competition") ? 
                               <EmojiEvents fontSize="small" /> :
                             tag.includes("Place") ?
-                              <EmojiEvents fontSize="small" /> :  
+                              <EmojiEvents fontSize="small" /> :
                             tag.includes("GenAI") || tag.includes("API") ?
-                              <Computer fontSize="small" /> :
-                              <School fontSize="small" />  
+                              <Computer fontSize="small" /> :  
+                              <School fontSize="small" />
                           }
                           sx={{
                             backgroundColor: 'rgba(0, 255, 0, 0.1)',
                             color: 'white',
                             border: '1px solid rgba(0, 255, 0, 0.3)',
                             '&:hover': {
-                              backgroundColor: 'rgba(0, 255, 0, 0.2)',  
-                              boxShadow: '0 0 10px rgba(0, 255, 0, 0.2)',
+                              backgroundColor: 'rgba(0, 255, 0, 0.2)',
+                              boxShadow: '0 0 10px rgba(0, 255, 0, 0.2)',  
                             },
                           }}
                         />
