@@ -26,6 +26,11 @@ const educationData = [
     degree: "Diploma in English",
     institution: "ICBT Campus, Colombo 04",
     period: "Mar 2023 - Sep 2023"
+  },
+  {
+    degree: "Secondary Education",
+    institution: "St. Peter's College, Colombo 04",  
+    period: "Jan 2009 - Feb 2023",
   }
 ];
 
