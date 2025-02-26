@@ -17,10 +17,21 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log(formData);
+    try {
+      await fetch("https://formspree.io/f/xnnjkrld", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      alert("Error sending message. Please try again.");
+    }
   };
 
   return (
@@ -53,18 +64,16 @@ const Contact = () => {
                 <Typography variant="body1" color="text.secondary" paragraph>
                   Feel free to reach out for collaborations or just a friendly hello
                 </Typography>
-                
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                   <Email sx={{ color: 'primary.main', mr: 2 }} />
                   <Typography variant="body1" color="text.secondary">
                     ransikasilva03.22@gmail.com
                   </Typography>
                 </Box>
-                
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                   <LinkedIn sx={{ color: 'primary.main', mr: 2 }} />
-                  <Typography 
-                    variant="body1" 
+                  <Typography
+                    variant="body1"
                     color="text.secondary"
                     component="a"
                     href="https://www.linkedin.com/in/ransikasilva"
@@ -74,11 +83,10 @@ const Contact = () => {
                     linkedin.com/in/ransikasilva
                   </Typography>
                 </Box>
-                
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                   <GitHub sx={{ color: 'primary.main', mr: 2 }} />
-                  <Typography 
-                    variant="body1" 
+                  <Typography
+                    variant="body1"
                     color="text.secondary"
                     component="a"
                     href="https://github.com/ransikasilva"
@@ -91,7 +99,7 @@ const Contact = () => {
               </Box>
             </motion.div>
           </Grid>
-
+          
           <Grid item xs={12} md={6}>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
