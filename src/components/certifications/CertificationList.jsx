@@ -54,14 +54,14 @@ const certifications = {
   ],
   cybersecurity: [
     {
-      title: "ISC2 Course Pre-assessment",
-      issuer: "ISC2",
-      date: "Feb 2025 - Feb 2028"
-    },
-    {
       title: "Foundations of Cybersecurity",
       issuer: "Google",
       date: "Feb 2025"
+    },
+    {
+      title: "ISC2 Course Pre-assessment",
+      issuer: "ISC2",
+      date: "Feb 2025 - Feb 2028"
     },
     {
       title: "ISC2 Candidate",
@@ -80,6 +80,11 @@ const certifications = {
     },
     {
       title: "Tools of the Trade: Linux and SQL",
+      issuer: "Google",
+      date: "Feb 2025"
+    },
+    {
+      title: "Assets, Threats, and Vulnerabilities",
       issuer: "Google",
       date: "Feb 2025"
     }
