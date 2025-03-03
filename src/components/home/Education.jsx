@@ -17,6 +17,14 @@ const educationData = [
     ]
   },
   {
+    degree: "Attorney At Law, Law",
+    institution: "Sri Lanka Law College",
+    period: "Feb 2025 - Oct 2028",
+    details: [
+    "Studying various aspects of law, including Constitutional Law, Criminal Law, Business Law, Civil Law, Property Law, Family Law, and Law of Evidence."
+    ]
+    },
+  {
     degree: "Certificate in Graphic Design",
     institution: "University of Kelaniya Sri Lanka",
     period: "Mar 2023 - Aug 2023",

@@ -10,8 +10,24 @@ import ticketingImage from '../../assets/images/ticket.jpeg';
 import gradesImage from '../../assets/images/studenta.png';
 import planeImage from '../../assets/images/Plane Seat Management.png';
 import climetaImage from '../../assets/images/climeta.jpeg';
+import diceImage from '../../assets/images/Dice game.png';
+import ChatbotImage from '../../assets/images/chatbot.png';
 
 const projects = [
+  {
+    title: "AI-Powered Business Chatbot",
+    description: "Intelligent AI chatbot providing accurate assistance for business inquiries",
+    technologies: ["llama-index", "Groq API", "HuggingFace"],
+    image: ChatbotImage,
+    demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link"
+    },
+    {
+      title: "Android Dice Game Application",
+      description: "Dice game app with customizable winning scores and computer strategies",
+      technologies: ["Kotlin", "Jetpack Compose"],
+      image: diceImage,
+      demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link"
+      },
   {
     title: "SlotZi - Smart Space Booking",
     description: "Real-time booking system with secure payments & notifications",
