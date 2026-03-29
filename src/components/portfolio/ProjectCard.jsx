@@ -27,6 +27,11 @@ const ProjectCard = ({ project }) => {
           height="200"
           image={project.image || "/placeholder.jpg"}
           alt={project.title}
+          loading="lazy"
+          sx={{
+            objectFit: 'cover',
+            backgroundColor: 'rgba(17, 17, 17, 0.5)',
+          }}
         />
         <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
           <Typography gutterBottom variant="h5" component="h2" sx={{ color: 'primary.main' }}>
@@ -51,21 +56,23 @@ const ProjectCard = ({ project }) => {
               </Typography>
             ))}
           </Box>
-          <Button
-            variant="outlined"
-            color="primary"
-            fullWidth
-            sx={{
-              mt: 'auto',
-              '&:hover': {
-                boxShadow: '0 0 10px #00ff00',
-              },
-            }}
-            href={project.demo}
-            target="_blank"
-          >
-            View Demo
-          </Button>
+          {project.demo && project.demo !== "#" && (
+            <Button
+              variant="outlined"
+              color="primary"
+              fullWidth
+              sx={{
+                mt: 'auto',
+                '&:hover': {
+                  boxShadow: '0 0 10px #00ff00',
+                },
+              }}
+              href={project.demo}
+              target="_blank"
+            >
+              View Demo
+            </Button>
+          )}
         </CardContent>
       </Card>
     </motion.div>
