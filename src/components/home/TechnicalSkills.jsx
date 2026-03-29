@@ -7,23 +7,28 @@ import { motion } from 'framer-motion';
 const skillsData = [
   {
     category: "Programming Languages",
-    skills: ["Python", "Java", "JavaScript","HTML","CSS"],
+    skills: ["Python", "Java", "JavaScript", "TypeScript", "Kotlin", "HTML", "CSS"],
     icon: Code
   },
   {
     category: "AI/ML Frameworks",
-    skills: ["TensorFlow", "Neural Networks", "OpenCV"],
+    skills: ["LangChain", "LangGraph", "OpenAI GPT", "TensorFlow", "PyTorch", "Neural Networks", "OpenCV", "HuggingFace"],
     icon: Storage
   },
   {
     category: "Web Development",
-    skills: ["Spring Boot", "Angular", "Flask", "Node", "React", "Express"],
+    skills: ["Next.js", "React", "React Native", "Expo", "Spring Boot", "Angular", "Flask", "FastAPI", "Node.js", "Express"],
     icon: Web
   },
   {
-    category: "Tools",
-    skills: ["Git", "WebSocket"],
+    category: "Cloud & DevOps",
+    skills: ["AWS", "Microsoft Azure", "Docker", "Railway", "Vercel", "Render"],
     icon: Build
+  },
+  {
+    category: "Database & Tools",
+    skills: ["PostgreSQL", "SQLite", "Supabase", "Pinecone", "Git", "WebSocket"],
+    icon: Storage
   },
   {
     category: "Design",

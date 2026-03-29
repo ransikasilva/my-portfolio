@@ -12,8 +12,40 @@ import planeImage from '../../assets/images/Plane Seat Management.png';
 import climetaImage from '../../assets/images/climeta.jpeg';
 import diceImage from '../../assets/images/Dice game.png';
 import ChatbotImage from '../../assets/images/chatbot.png';
+import emergencyEdImage from '../../assets/images/EDAI.png';
+import dataAnalystImage from '../../assets/images/datagent.png';
 
 const projects = [
+  {
+    title: "AI-Powered Emergency Department Operations System",
+    description: "Comprehensive multi-agent AI system with 6 specialized agents (Triage, Diagnosis, Critical Care, Resource Allocation, Coordination, Orchestration) for emergency department operations management using LangGraph and RAG architecture with Pinecone vector database",
+    technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "Next.js 14", "PostgreSQL", "Pinecone", "OpenAI GPT-3.5", "TypeScript", "TailwindCSS"],
+    image: emergencyEdImage,
+    demo: "#",
+    featured: true,
+    date: "Jan 2026 – Mar 2026",
+    highlights: [
+      "Multi-Agent Coordination with 6 specialized AI agents working in parallel",
+      "RAG Architecture with 100+ medical protocols for evidence-based decision support",
+      "Real-time resource management with automated bed allocation and staff assignment",
+      "Live analytics dashboard with patient flow visualization"
+    ]
+  },
+  {
+    title: "Autonomous Data Analyst Agent with Self-Healing Code Generation",
+    description: "Production-grade agentic AI system with 4 specialized agents (Planner, Coder, Critic, Summarizer) that autonomously analyzes datasets through intelligent planning, code generation, execution, and error recovery using LangGraph state machine with automatic error detection and retry logic",
+    technologies: ["Python 3.13", "FastAPI", "LangGraph", "React 18", "TypeScript", "OpenAI GPT-4o", "WebSocket", "Pandas", "Matplotlib", "Plotly"],
+    image: dataAnalystImage,
+    demo: "#",
+    featured: true,
+    date: "Mar 2026 – Present",
+    highlights: [
+      "Self-healing agentic workflow with automatic error detection and retry logic (max 3 attempts)",
+      "Sandboxed execution environment with timeout protection and session isolation",
+      "Real-time progress streaming via WebSocket showing agent decisions and code execution",
+      "Context-aware planning with step-by-step execution and intermediate result chaining"
+    ]
+  },
   {
     title: "AI-Powered Business Chatbot",
     description: "Intelligent AI chatbot providing accurate assistance for business inquiries",
