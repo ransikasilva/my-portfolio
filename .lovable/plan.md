@@ -1,47 +1,47 @@
 
-# Portfolio Rebuild — Neethila Ransika Silva
+# Techy Kinetic Bento — Redesign
 
-Replace the current generic single-page portfolio with a real 4-page site using your actual content (bio, experience, education, 13 projects, 23 certifications, contact).
+Rebuild the homepage and global chrome around the selected "Techy kinetic bento" direction. Locked tokens: warm off-white `#FAF7F2`, near-black `#0F1020`, coral `#FF5A36`, cyan `#22D3EE`, lilac `#C4B5FD`. Typography: **Syne** (headings), **Plus Jakarta Sans** (body), **Space Mono** (metadata).
 
-## Pages & routes
+## Global
 
-- `/` — Home: Hero, About (Who I Am / What I Do), Work Experience, Education, Technical Skills, Honors & Awards, Workshops & Events
-- `/portfolio` — All 13 projects (2 featured highlighted), masonry layout, tags, demo links
-- `/certifications` — 23 certs grouped into 4 categories (ML/AI, Cybersecurity, Frameworks & Languages, Other)
-- `/contact` — Contact form + email/LinkedIn/GitHub links
+- **Replace `src/styles.css` tokens** with the locked palette (oklch equivalents), swap font imports to Syne + Plus Jakarta Sans + Space Mono, expose `.font-mono` via `--font-mono`.
+- **New `<FloatingNav />`** (in `__root.tsx`) — fixed, centered, glassmorphism capsule (`backdrop-blur-xl`, translucent white, soft border). Shrinks on scroll: padding tightens, brand label collapses to a pulsing dot at ≥40px scroll. Links Home / Portfolio / Lab / Contact + small "Menu" CTA. Smooth transition.
+- **Footer**: minimalist mono-labeled strip matching the new tone.
 
-Each route gets its own `head()` with unique title + description + og tags for SEO.
+## Home (`/`) — Bento layout (12-col grid)
 
-## Design
+Tiles, top to bottom:
+1. **Hero tile** (col-span 8) — dotted grid bg, blurred cyan orb top-right, mono eyebrow "Available for new challenges", giant Syne headline `NEETHILA / BUILDING / INTELLIGENT` with stroked middle word.
+2. **Stats tile** (col-span 4) — coral bg, "Active Deployments / 14+", shimmering progress bar.
+3. **About profile tile** (col-span 4) — NS gradient avatar + bio + Colombo/Hybrid mono chips.
+4. **Toolkit kinetic ticker** (col-span 8) — dark `#0F1020` tile with two opposing marquees of stack names (Python, React, TensorFlow, Next.js, PyTorch, PostgreSQL...) in giant Syne, mono metadata footer.
+5. **Featured project tile** (col-span 6) — pulled from `projects[0]` (Emergency Dept AI), numbered `01 / N`, decorative gradient circle, hover state shifts title to coral.
+6. **Core stack tile** (col-span 3) — cyan bg, Syne stacked list.
+7. **"Start a project" tile** (col-span 3) — dashed border, links to `/contact`.
+8. **Experience strip** — two dark/light bento tiles with OCTAVE + WIWIS.AI roles, mono dates.
+9. **Education bento** — 5 tiles (mixed sizes) for each entry with mono period labels.
+10. **Honors + Workshops bento row** — Coderally & IEEE Xtreme as colored hero tiles, then 5 workshop image tiles in masonry sub-grid.
 
-Keep the vibrant light theme, Urbanist/Epilogue typography, and masonry style already established. Reuse existing tokens in `src/styles.css`. Add a shared `Header` (nav with Home / Portfolio / Certifications / Contact) and `Footer` component in `__root.tsx` so it appears across all pages.
+All content sourced from existing `src/data/portfolio.ts` — no data changes.
 
-## Content source
+## Other routes
 
-Store all the structured data (bio, experience, education, skills, projects, workshops, awards, certifications) in a single typed file `src/data/portfolio.ts`, imported by each route. Easy to edit later.
+- **`/portfolio`, `/certifications`, `/contact`** — restyle to match: warm bg, bento tiles, mono metadata labels, capsule CTAs, glass cards. Same content. Contact form keeps mailto submit.
 
-## Images — needs your input
+## Animations
 
-The 18 images referenced (profile `pp.png`, 13 project images, 5 workshop images) are not in this project. Two options:
+Add to `src/styles.css`:
+- `@keyframes marquee` / `marquee2` (opposing) + `shimmer`
+- Utility classes for the kinetic tiles
 
-1. **You upload them** — drop them into chat and I'll wire them up at `src/assets/images/...` with the exact filenames.
-2. **I generate placeholders** — AI-generated images matching each project's theme until you upload the real ones.
+## Files touched
 
-## Contact form
+- `src/styles.css` — tokens, fonts, keyframes
+- `src/routes/__root.tsx` — FloatingNav (with scroll-shrink) + Footer
+- `src/routes/index.tsx` — full bento rebuild
+- `src/routes/portfolio.tsx` — restyle to new system
+- `src/routes/certifications.tsx` — restyle to new system
+- `src/routes/contact.tsx` — restyle to new system
 
-Two options:
-1. **Formspree** (matches your old setup) — you give me your Formspree endpoint URL and I wire it up.
-2. **Lovable Cloud** — store submissions in a database + optional email; no third-party account needed.
-
-## Technical notes
-
-- File-based routing under `src/routes/` (`index.tsx`, `portfolio.tsx`, `certifications.tsx`, `contact.tsx`)
-- Shared nav in `__root.tsx` with `<Outlet />`
-- All colors via semantic tokens (no hardcoded hex in components)
-- External links (LinkedIn, GitHub, demo URLs) open in new tabs with `rel="noopener"`
-
-## Open questions before I build
-
-1. Upload images now, or use generated placeholders?
-2. Contact form: Formspree (give URL) or Lovable Cloud?
-3. Keep current vibrant orange/teal palette, or adjust?
+Existing `src/data/portfolio.ts` stays as-is. Placeholder images unchanged until you upload real ones.
