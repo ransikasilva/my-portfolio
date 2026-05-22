@@ -9,6 +9,45 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { personal } from "@/data/portfolio";
+import { Mail, Github, Linkedin } from "lucide-react";
+
+function SiteHeader() {
+  const linkBase = "text-sm font-medium hover:text-primary transition-colors";
+  return (
+    <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <Link to="/" className="font-display font-extrabold text-xl tracking-tight">
+          neethila<span className="text-primary">.</span>
+        </Link>
+        <nav className="hidden md:flex items-center gap-8">
+          <Link to="/" className={linkBase} activeOptions={{ exact: true }} activeProps={{ className: "text-primary" }}>Home</Link>
+          <Link to="/portfolio" className={linkBase} activeProps={{ className: "text-primary" }}>Portfolio</Link>
+          <Link to="/certifications" className={linkBase} activeProps={{ className: "text-primary" }}>Certifications</Link>
+          <Link to="/contact" className={linkBase} activeProps={{ className: "text-primary" }}>Contact</Link>
+        </nav>
+        <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-4 py-2 text-sm font-medium hover:bg-primary transition-colors">
+          Let's talk
+        </Link>
+      </div>
+    </header>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="border-t border-border mt-24">
+      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+        <span>© {new Date().getFullYear()} {personal.name}. Built with care.</span>
+        <div className="flex items-center gap-5">
+          <a href={`mailto:${personal.email}`} className="hover:text-foreground transition-colors" aria-label="Email"><Mail className="w-4 h-4" /></a>
+          <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="LinkedIn"><Linkedin className="w-4 h-4" /></a>
+          <a href={personal.github} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="GitHub"><Github className="w-4 h-4" /></a>
+        </div>
+      </div>
+    </footer>
+  );
+}
 
 function NotFoundComponent() {
   return (
@@ -72,14 +111,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Neethila Ransika Silva — Software Engineer & AI Enthusiast" },
+      { name: "description", content: "Portfolio of Neethila Ransika Silva — Software Engineering undergraduate building AI/ML, computer vision, and full-stack systems." },
+      { name: "author", content: "Neethila Ransika Silva" },
+      { property: "og:title", content: "Neethila Ransika Silva — Software Engineer & AI Enthusiast" },
+      { property: "og:description", content: "Software Engineering undergraduate building AI/ML, computer vision, and full-stack systems." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -113,7 +151,11 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="min-h-screen flex flex-col bg-background text-foreground">
+        <SiteHeader />
+        <main className="flex-1"><Outlet /></main>
+        <SiteFooter />
+      </div>
     </QueryClientProvider>
   );
 }
