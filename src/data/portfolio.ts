@@ -1,25 +1,14 @@
-import p1 from "@/assets/project-1.jpg";
-import p2 from "@/assets/project-2.jpg";
-import p3 from "@/assets/project-3.jpg";
-import p4 from "@/assets/project-4.jpg";
-import p5 from "@/assets/project-5.jpg";
-import p6 from "@/assets/project-6.jpg";
-import p7 from "@/assets/project-7.jpg";
-import p8 from "@/assets/project-8.jpg";
-
-// Placeholder image pool — rotate through generated assets until real images are uploaded
-const pool = [p1, p2, p3, p4, p5, p6, p7, p8];
-const img = (i: number) => pool[i % pool.length];
+// Real project and workshop images from public folder
 
 export const personal = {
-  name: "Neethila Ransika Silva",
+  name: "Ransika Silva",
   title: "Software Engineer & AI Enthusiast",
   tagline:
     "Software Engineering undergraduate with expertise in AI/ML, computer vision, and full-stack development.",
   email: "ransikasilva03.22@gmail.com",
   linkedin: "https://www.linkedin.com/in/ransikasilva",
   github: "https://github.com/ransikasilva",
-  initials: "NS",
+  initials: "RS",
   bio: {
     whoIAm:
       "I'm a Software Engineering undergraduate with a passion for AI/ML, computer vision, and full-stack development. My journey in tech is driven by a desire to create innovative solutions that make a real impact. Currently pursuing my Bachelor's degree at the University of Westminster (Informatics Institute of Technology), I'm constantly expanding my skills and knowledge in the ever-evolving tech landscape.",
@@ -62,7 +51,7 @@ export const workExperience = [
 
 export const education = [
   {
-    degree: "BE, Software Engineering",
+    degree: "BEng, Software Engineering",
     institution: "University of Westminster (IIT)",
     period: "Sep 2023 - Sep 2027",
     details: [
@@ -132,7 +121,7 @@ export const workshopsAndEvents = [
     organizer: "Postman & Pieces for Developers",
     date: "January 2025",
     description: "Learned about APIs and Generative AI from industry experts. Earned Postman API Fundamentals Student Expert certification.",
-    image: img(0),
+    image: "/api-tour.jpeg",
     tags: ["GenAI", "API", "Certification"],
   },
   {
@@ -140,7 +129,7 @@ export const workshopsAndEvents = [
     organizer: "IEEE Computer Society SBC of IIT",
     date: "2024",
     description: "Won 1st place in this 24-hour competitive programming hackathon.",
-    image: img(1),
+    image: "/coderally.jpeg",
     tags: ["Hackathon", "1st Place"],
   },
   {
@@ -148,7 +137,7 @@ export const workshopsAndEvents = [
     organizer: "CodeRally & IEEE CS IIT",
     date: "August 2024",
     description: "Enhanced algorithmic problem-solving skills in an interactive workshop on advanced coding techniques.",
-    image: img(2),
+    image: "/algorithm-workshop.jpeg",
     tags: ["Algorithms", "Problem Solving"],
   },
   {
@@ -156,7 +145,7 @@ export const workshopsAndEvents = [
     organizer: "IEEE CS IIT & IndustPro",
     date: "2024",
     description: "Career development workshop on professional growth and industry requirements in tech.",
-    image: img(3),
+    image: "/career-navigator.jpeg",
     tags: ["Career Development"],
   },
   {
@@ -164,7 +153,7 @@ export const workshopsAndEvents = [
     organizer: "IEEE SBC of IIT",
     date: "October 2024",
     description: "24-hour global programming competition with complex algorithmic challenges.",
-    image: img(4),
+    image: "/ieee-xtreme.jpeg",
     tags: ["Global Competition", "Team Coding"],
   },
 ];
@@ -187,7 +176,7 @@ export const projects: Project[] = [
     description:
       "Comprehensive multi-agent AI system with 6 specialized agents (Triage, Diagnosis, Critical Care, Resource Allocation, Coordination, Orchestration) for emergency department operations using LangGraph and RAG with Pinecone.",
     technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "Next.js 14", "PostgreSQL", "Pinecone", "OpenAI GPT-3.5", "TypeScript", "TailwindCSS"],
-    image: img(0),
+    image: "/EDAI.png",
     featured: true,
     date: "Jan 2026 – Mar 2026",
     highlights: [
@@ -202,7 +191,7 @@ export const projects: Project[] = [
     description:
       "Production-grade agentic AI system with 4 specialized agents (Planner, Coder, Critic, Summarizer) that autonomously analyzes datasets via LangGraph state machine with automatic error detection and retry logic.",
     technologies: ["Python 3.13", "FastAPI", "LangGraph", "React 18", "TypeScript", "OpenAI GPT-4o", "WebSocket", "Pandas", "Matplotlib", "Plotly"],
-    image: img(1),
+    image: "/datagent.png",
     featured: true,
     date: "Mar 2026 – Present",
     highlights: [
@@ -212,17 +201,17 @@ export const projects: Project[] = [
       "Context-aware step-by-step execution",
     ],
   },
-  { title: "AI-Powered Business Chatbot", description: "Intelligent AI chatbot providing accurate assistance for business inquiries.", technologies: ["llama-index", "Groq API", "HuggingFace"], image: img(2), featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
-  { title: "Android Dice Game Application", description: "Dice game app with customizable winning scores and computer strategies.", technologies: ["Kotlin", "Jetpack Compose"], image: img(3), featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
-  { title: "SlotZi - Smart Space Booking", description: "Real-time booking system with secure payments & notifications.", technologies: ["Node.js", "React Native", "Supabase"], image: img(4), featured: false },
-  { title: "Movie Recommendation System", description: "AI-powered movie recommendations using collaborative & content-based filtering.", technologies: ["Python", "TensorFlow", "React.js"], image: img(5), featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
-  { title: "Pothole Detector AI", description: "Real-time pothole detection using TensorFlow & MobileNetV2.", technologies: ["TensorFlow", "Flask", "OpenCV"], image: img(6), featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
-  { title: "Cat & Dog Classifier", description: "Deep learning classifier with 90%+ accuracy.", technologies: ["Python", "TensorFlow", "Flask"], image: img(7), featured: false, demo: "https://drive.google.com/file/d/1VXbAd-hy3aOFjmWPhxS8X1HTW3DJzmX5/view?usp=share_link" },
-  { title: "Hand Gesture Control AI", description: "Real-time gesture recognition system with 91% accuracy.", technologies: ["PyTorch", "OpenCV", "PyQt5"], image: img(0), featured: false, demo: "https://drive.google.com/file/d/1S5HMeL7AkeFV_4o39YThINj9VY4G7oRx/view?usp=share_link" },
-  { title: "Real-Time Event Ticketing System", description: "High-performance ticketing system with real-time updates.", technologies: ["Spring Boot", "Angular", "WebSocket", "SQL"], image: img(1), featured: false, demo: "https://drive.google.com/file/d/1ginoLuXdlQQjsTBLhJdki1leWBgs3Tlo/view" },
-  { title: "Student Grades Record System", description: "Python system to manage student grades with automated calculation and reporting.", technologies: ["Python"], image: img(2), featured: false, demo: "https://drive.google.com/drive/folders/1YjU-xieIjS2-15FHB1XxL3gJcVCpj2Vx?usp=share_link" },
-  { title: "Plane Management System", description: "Java-based airline ticket booking system with intuitive seat selection.", technologies: ["Java"], image: img(3), featured: false, demo: "https://drive.google.com/drive/folders/1mLG62cEf0b4EvqX5aYqyngqtdd-XOcR_?usp=share_link" },
-  { title: "CliMeta Website", description: "Interactive website with responsive design for multi-device accessibility.", technologies: ["HTML", "CSS", "JavaScript"], image: img(4), featured: false, demo: "https://drive.google.com/drive/folders/1hJoRY9IM6XZxObMhaXvfMQvD8udbpEpo?usp=share_link" },
+  { title: "AI-Powered Business Chatbot", description: "Intelligent AI chatbot providing accurate assistance for business inquiries.", technologies: ["llama-index", "Groq API", "HuggingFace"], image: "/chatbot.png", featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
+  { title: "Android Dice Game Application", description: "Dice game app with customizable winning scores and computer strategies.", technologies: ["Kotlin", "Jetpack Compose"], image: "/Dice game.png", featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
+  { title: "SlotZi - Smart Space Booking", description: "Real-time booking system with secure payments & notifications.", technologies: ["Node.js", "React Native", "Supabase"], image: "/slotzi.png", featured: false },
+  { title: "Movie Recommendation System", description: "AI-powered movie recommendations using collaborative & content-based filtering.", technologies: ["Python", "TensorFlow", "React.js"], image: "/movie.jpg", featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
+  { title: "Pothole Detector AI", description: "Real-time pothole detection using TensorFlow & MobileNetV2.", technologies: ["TensorFlow", "Flask", "OpenCV"], image: "/pothole.jpeg", featured: false, demo: "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link" },
+  { title: "Cat & Dog Classifier", description: "Deep learning classifier with 90%+ accuracy.", technologies: ["Python", "TensorFlow", "Flask"], image: "/catdog.jpeg", featured: false, demo: "https://drive.google.com/file/d/1VXbAd-hy3aOFjmWPhxS8X1HTW3DJzmX5/view?usp=share_link" },
+  { title: "Hand Gesture Control AI", description: "Real-time gesture recognition system with 91% accuracy.", technologies: ["PyTorch", "OpenCV", "PyQt5"], image: "/hand.jpeg", featured: false, demo: "https://drive.google.com/file/d/1S5HMeL7AkeFV_4o39YThINj9VY4G7oRx/view?usp=share_link" },
+  { title: "Real-Time Event Ticketing System", description: "High-performance ticketing system with real-time updates.", technologies: ["Spring Boot", "Angular", "WebSocket", "SQL"], image: "/ticket.jpeg", featured: false, demo: "https://drive.google.com/file/d/1ginoLuXdlQQjsTBLhJdki1leWBgs3Tlo/view" },
+  { title: "Student Grades Record System", description: "Python system to manage student grades with automated calculation and reporting.", technologies: ["Python"], image: "/studenta.png", featured: false, demo: "https://drive.google.com/drive/folders/1YjU-xieIjS2-15FHB1XxL3gJcVCpj2Vx?usp=share_link" },
+  { title: "Plane Management System", description: "Java-based airline ticket booking system with intuitive seat selection.", technologies: ["Java"], image: "/Plane Seat Management.png", featured: false, demo: "https://drive.google.com/drive/folders/1mLG62cEf0b4EvqX5aYqyngqtdd-XOcR_?usp=share_link" },
+  { title: "CliMeta Website", description: "Interactive website with responsive design for multi-device accessibility.", technologies: ["HTML", "CSS", "JavaScript"], image: "/climeta.jpeg", featured: false, demo: "https://drive.google.com/drive/folders/1hJoRY9IM6XZxObMhaXvfMQvD8udbpEpo?usp=share_link" },
 ];
 
 export const certifications = {

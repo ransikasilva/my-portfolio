@@ -56,7 +56,7 @@ function Index() {
       {/* ROW 1 — HERO + STATS */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         {/* Hero */}
-        <Tile className="md:col-span-8 bg-card border border-border p-8 md:p-12 shadow-sm min-h-[440px] flex flex-col justify-end">
+        <Tile className="md:col-span-8 bg-card border border-border p-8 md:p-12 shadow-sm min-h-[440px] flex flex-col justify-end overflow-hidden">
           <div
             className="absolute inset-0 opacity-10 pointer-events-none"
             style={{
@@ -64,11 +64,20 @@ function Index() {
               backgroundSize: "24px 24px",
             }}
           />
+          {/* Profile Image Background */}
+          <div className="absolute top-0 -right-20 w-[550px] h-full opacity-50 pointer-events-none">
+            <img
+              src="/pp.png"
+              alt="Profile"
+              className="w-full h-full object-cover object-right mix-blend-luminosity"
+            />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent via-40% to-card" />
+          </div>
           <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-secondary opacity-20 blur-[100px] animate-pulse" />
           <div className="relative z-10">
             <Eyebrow>Available for new challenges</Eyebrow>
             <h1 className="font-display text-5xl md:text-7xl font-extrabold leading-[0.9] tracking-tighter mt-5">
-              NEETHILA
+              RANSIKA
               <br />
               <span className="text-stroke">BUILDING</span>
               <br />
@@ -101,10 +110,10 @@ function Index() {
         <Tile className="md:col-span-4 bg-card border border-border p-8 flex flex-col gap-5">
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-secondary flex items-center justify-center text-white font-display text-2xl font-extrabold shadow-inner">
-              NS
+              {personal.initials}
             </div>
             <div>
-              <h3 className="font-bold text-xl">{personal.name.split(" ").slice(0, 2).join(" ")}</h3>
+              <h3 className="font-bold text-xl">{personal.name}</h3>
               <p className="font-mono text-[10px] text-muted-foreground uppercase">Full-stack & AI/ML</p>
             </div>
           </div>

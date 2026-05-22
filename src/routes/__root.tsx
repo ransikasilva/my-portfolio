@@ -39,7 +39,7 @@ function FloatingNav() {
             scrolled ? "hidden" : "inline text-sm"
           }`}
         >
-          neethila.
+          ransika.
         </span>
       </Link>
       <div className="hidden md:flex items-center gap-6">
@@ -146,10 +146,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Neethila Ransika Silva — Software Engineer & AI Enthusiast" },
-      { name: "description", content: "Portfolio of Neethila Ransika Silva — Software Engineering undergraduate building AI/ML, computer vision, and full-stack systems." },
-      { name: "author", content: "Neethila Ransika Silva" },
-      { property: "og:title", content: "Neethila Ransika Silva — Software Engineer & AI Enthusiast" },
+      { title: "Ransika Silva — Software Engineer & AI Enthusiast" },
+      { name: "description", content: "Portfolio of Ransika Silva — Software Engineering undergraduate building AI/ML, computer vision, and full-stack systems." },
+      { name: "author", content: "Ransika Silva" },
+      { property: "og:title", content: "Ransika Silva — Software Engineer & AI Enthusiast" },
       { property: "og:description", content: "Software Engineering undergraduate building AI/ML, computer vision, and full-stack systems." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
