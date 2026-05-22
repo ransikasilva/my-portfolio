@@ -1,0 +1,571 @@
+{
+  "personalInfo": {
+    "name": "Neethila Ransika Silva",
+    "title": "Software Engineer & AI Enthusiast",
+    "tagline": "Software Engineering undergraduate with expertise in AI/ML, computer vision, and full-stack development.",
+    "email": "ransikasilva03.22@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ransikasilva",
+    "github": "https://github.com/ransikasilva",
+    "profileImage": "src/assets/images/pp.png",
+    "bio": {
+      "whoIAm": "I'm a Software Engineering undergraduate with a passion for AI/ML, computer vision, and full-stack development. My journey in tech is driven by a desire to create innovative solutions that make a real impact. Currently pursuing my Bachelor's degree at the University of Westminster (Informatics Institute of Technology), I'm constantly expanding my skills and knowledge in the ever-evolving tech landscape.",
+      "whatIDo": "I specialize in building deep learning models, scalable web applications, and real-time systems. My experience spans across various technologies and frameworks, allowing me to tackle diverse challenges in software development. Beyond coding, I'm passionate about participating in hackathons, contributing to open-source projects, and staying up-to-date with the latest technological advancements."
+    }
+  },
+
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "Software Engineer Intern",
+      "company": "OCTAVE - John Keells Group",
+      "type": "Internship",
+      "period": "Apr 2025 - Present",
+      "duration": "1 yr",
+      "location": "Colombo, Western Province, Sri Lanka",
+      "workType": "Hybrid",
+      "responsibilities": [
+        "Architect and develop dynamic full-stack web applications using Next.js and Flask, serving users",
+        "Design and build interactive dashboards and analytics platforms that drive key business decisions",
+        "Leverage Microsoft Azure cloud services to deploy scalable, high-performance applications",
+        "Spearhead innovative AI/ML research projects, contributing to cutting-edge machine learning solutions",
+        "Drive generative AI initiatives, developing novel applications that push technological boundaries",
+        "Collaborate with senior engineers on mission-critical R&D projects, delivering measurable impact",
+        "Transform complex data into actionable insights through advanced visualization and reporting tools"
+      ],
+      "skills": ["Next.js", "Flask", "Microsoft Azure", "AI/ML", "Generative AI", "Data Visualization", "Analytics"]
+    },
+    {
+      "id": 2,
+      "title": "Software Engineer & Technical Consultant",
+      "company": "WIWIS.AI",
+      "type": "Part-time",
+      "period": "May 2025 - Present",
+      "duration": "11 mos",
+      "location": "Remote",
+      "workType": "Remote",
+      "responsibilities": [
+        "Provided software engineering consultation to junior engineers on system design, architecture, and best practices",
+        "Developed and maintained full-stack applications, including web (Next.js) and mobile apps (React Native, Expo)",
+        "Built and optimized backend services using Node.js",
+        "Collaborated with cross-functional teams to improve system performance, scalability, and architecture",
+        "Supported debugging, optimization, and deployment processes across multiple projects",
+        "Worked with AWS services for cloud deployment and application management"
+      ],
+      "skills": ["Next.js", "React Native", "Expo", "Node.js", "AWS", "System Architecture", "Technical Consulting"]
+    }
+  ],
+
+  "education": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Engineering - BE, Software Engineering",
+      "institution": "University of Westminster (Informatics Institute of Technology)",
+      "period": "Sep 2023 - Sep 2027",
+      "details": [
+        "Object-Oriented Programming (Marks: ICT – 100%)",
+        "Database Systems (Marks: ICT – 100%)",
+        "Mobile Application Development",
+        "Data Structures and Algorithms"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Attorney At Law, Law",
+      "institution": "Sri Lanka Law College",
+      "period": "Feb 2025 - Oct 2028",
+      "details": [
+        "Studying various aspects of law, including Constitutional Law, Criminal Law, Business Law, Civil Law, Property Law, Family Law, and Law of Evidence."
+      ]
+    },
+    {
+      "id": 3,
+      "degree": "Certificate in Graphic Design",
+      "institution": "University of Kelaniya Sri Lanka",
+      "period": "Mar 2023 - Aug 2023",
+      "grade": "A+"
+    },
+    {
+      "id": 4,
+      "degree": "Diploma in English",
+      "institution": "ICBT Campus, Colombo 04",
+      "period": "Mar 2023 - Sep 2023"
+    },
+    {
+      "id": 5,
+      "degree": "Secondary Education",
+      "institution": "St. Peter's College, Colombo 04",
+      "period": "Jan 2009 - Feb 2023"
+    }
+  ],
+
+  "technicalSkills": {
+    "programmingLanguages": {
+      "category": "Programming Languages",
+      "skills": ["Python", "Java", "JavaScript", "TypeScript", "Kotlin", "HTML", "CSS"]
+    },
+    "aiMlFrameworks": {
+      "category": "AI/ML Frameworks",
+      "skills": ["LangChain", "LangGraph", "OpenAI GPT", "TensorFlow", "PyTorch", "Neural Networks", "OpenCV", "HuggingFace"]
+    },
+    "webDevelopment": {
+      "category": "Web Development",
+      "skills": ["Next.js", "React", "React Native", "Expo", "Spring Boot", "Angular", "Flask", "FastAPI", "Node.js", "Express"]
+    },
+    "cloudDevOps": {
+      "category": "Cloud & DevOps",
+      "skills": ["AWS", "Microsoft Azure", "Docker", "Railway", "Vercel", "Render"]
+    },
+    "databaseTools": {
+      "category": "Database & Tools",
+      "skills": ["PostgreSQL", "SQLite", "Supabase", "Pinecone", "Git", "WebSocket"]
+    },
+    "design": {
+      "category": "Design",
+      "skills": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator", "Figma"]
+    }
+  },
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "AI-Powered Emergency Department Operations System",
+      "description": "Comprehensive multi-agent AI system with 6 specialized agents (Triage, Diagnosis, Critical Care, Resource Allocation, Coordination, Orchestration) for emergency department operations management using LangGraph and RAG architecture with Pinecone vector database",
+      "technologies": ["Python", "FastAPI", "LangChain", "LangGraph", "Next.js 14", "PostgreSQL", "Pinecone", "OpenAI GPT-3.5", "TypeScript", "TailwindCSS"],
+      "image": "src/assets/images/EDAI.png",
+      "featured": true,
+      "date": "Jan 2026 – Mar 2026",
+      "highlights": [
+        "Multi-Agent Coordination with 6 specialized AI agents working in parallel",
+        "RAG Architecture with 100+ medical protocols for evidence-based decision support",
+        "Real-time resource management with automated bed allocation and staff assignment",
+        "Live analytics dashboard with patient flow visualization"
+      ],
+      "demo": null,
+      "github": null
+    },
+    {
+      "id": 2,
+      "title": "Autonomous Data Analyst Agent with Self-Healing Code Generation",
+      "description": "Production-grade agentic AI system with 4 specialized agents (Planner, Coder, Critic, Summarizer) that autonomously analyzes datasets through intelligent planning, code generation, execution, and error recovery using LangGraph state machine with automatic error detection and retry logic",
+      "technologies": ["Python 3.13", "FastAPI", "LangGraph", "React 18", "TypeScript", "OpenAI GPT-4o", "WebSocket", "Pandas", "Matplotlib", "Plotly"],
+      "image": "src/assets/images/datagent.png",
+      "featured": true,
+      "date": "Mar 2026 – Present",
+      "highlights": [
+        "Self-healing agentic workflow with automatic error detection and retry logic (max 3 attempts)",
+        "Sandboxed execution environment with timeout protection and session isolation",
+        "Real-time progress streaming via WebSocket showing agent decisions and code execution",
+        "Context-aware planning with step-by-step execution and intermediate result chaining"
+      ],
+      "demo": null,
+      "github": null
+    },
+    {
+      "id": 3,
+      "title": "AI-Powered Business Chatbot",
+      "description": "Intelligent AI chatbot providing accurate assistance for business inquiries",
+      "technologies": ["llama-index", "Groq API", "HuggingFace"],
+      "image": "src/assets/images/chatbot.png",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 4,
+      "title": "Android Dice Game Application",
+      "description": "Dice game app with customizable winning scores and computer strategies",
+      "technologies": ["Kotlin", "Jetpack Compose"],
+      "image": "src/assets/images/Dice game.png",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 5,
+      "title": "SlotZi - Smart Space Booking",
+      "description": "Real-time booking system with secure payments & notifications",
+      "technologies": ["Node.js", "React Native", "Supabase"],
+      "image": "src/assets/images/slotzi.png",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": null,
+      "github": null
+    },
+    {
+      "id": 6,
+      "title": "Movie Recommendation System",
+      "description": "AI-powered movie recommendations using collaborative & content-based filtering",
+      "technologies": ["Python", "TensorFlow", "React.js"],
+      "image": "src/assets/images/movie.jpg",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 7,
+      "title": "Pothole Detector AI",
+      "description": "Real-time pothole detection using TensorFlow & MobileNetV2",
+      "technologies": ["TensorFlow", "Flask", "OpenCV"],
+      "image": "src/assets/images/pothole.jpeg",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/file/d/17lAV5YSGI4jccmW-J_mTTtjGBBKcjQyz/view?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 8,
+      "title": "Cat & Dog Classifier",
+      "description": "Deep learning classifier with 90%+ accuracy",
+      "technologies": ["Python", "TensorFlow", "Flask"],
+      "image": "src/assets/images/catdog.jpeg",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/file/d/1VXbAd-hy3aOFjmWPhxS8X1HTW3DJzmX5/view?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 9,
+      "title": "Hand Gesture Control AI",
+      "description": "Real-time gesture recognition system with 91% accuracy",
+      "technologies": ["PyTorch", "OpenCV", "PyQt5"],
+      "image": "src/assets/images/hand.jpeg",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/file/d/1S5HMeL7AkeFV_4o39YThINj9VY4G7oRx/view?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 10,
+      "title": "Real-Time Event Ticketing System",
+      "description": "High-performance ticketing system with real-time updates",
+      "technologies": ["Spring Boot", "Angular", "WebSocket", "SQL"],
+      "image": "src/assets/images/ticket.jpeg",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/file/d/1ginoLuXdlQQjsTBLhJdki1leWBgs3Tlo/view",
+      "github": null
+    },
+    {
+      "id": 11,
+      "title": "Student Grades Record System",
+      "description": "Python system to manage student grades with automated calculation and reporting",
+      "technologies": ["Python"],
+      "image": "src/assets/images/studenta.png",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/drive/folders/1YjU-xieIjS2-15FHB1XxL3gJcVCpj2Vx?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 12,
+      "title": "Plane Management System",
+      "description": "Java-based airline ticket booking system with intuitive seat selection",
+      "technologies": ["Java"],
+      "image": "src/assets/images/Plane Seat Management.png",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/drive/folders/1mLG62cEf0b4EvqX5aYqyngqtdd-XOcR_?usp=share_link",
+      "github": null
+    },
+    {
+      "id": 13,
+      "title": "CliMeta Website",
+      "description": "Interactive website with responsive design for multi-device accessibility",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "image": "src/assets/images/climeta.jpeg",
+      "featured": false,
+      "date": null,
+      "highlights": [],
+      "demo": "https://drive.google.com/drive/folders/1hJoRY9IM6XZxObMhaXvfMQvD8udbpEpo?usp=share_link",
+      "github": null
+    }
+  ],
+
+  "workshopsAndEvents": [
+    {
+      "id": 1,
+      "title": "API & GenAI Tour 2025 (Postman & Pieces)",
+      "organizer": "Postman & Pieces for Developers",
+      "date": "January 2025",
+      "description": "Participated in this event to learn about APIs and Generative AI from industry experts. Earned Postman API Fundamentals Student Expert certification.",
+      "image": "src/assets/images/api-tour.jpeg",
+      "tags": ["GenAI", "API", "Certification"]
+    },
+    {
+      "id": 2,
+      "title": "CodeRally 5.0 Hackathon",
+      "organizer": "IEEE Computer Society SBC of IIT",
+      "date": "2024",
+      "description": "Participated and won 1st place in this 24-hour competitive programming hackathon where tech passion met exceptional problem-solving skills.",
+      "image": "src/assets/images/coderally.jpeg",
+      "tags": ["Hackathon", "Competition", "1st Place"]
+    },
+    {
+      "id": 3,
+      "title": "Advanced Algorithm Techniques Workshop",
+      "organizer": "CodeRally & IEEE CS IIT",
+      "date": "August 2024",
+      "description": "Enhanced algorithmic problem-solving skills in this interactive workshop focused on advanced coding techniques.",
+      "image": "src/assets/images/algorithm-workshop.jpeg",
+      "tags": ["Algorithms", "Problem Solving", "Coding"]
+    },
+    {
+      "id": 4,
+      "title": "Career Navigator Workshop",
+      "organizer": "IEEE CS IIT & IndustPro",
+      "date": "2024",
+      "description": "Participated in this career development workshop to gain insights on professional growth and industry requirements in tech.",
+      "image": "src/assets/images/career-navigator.jpeg",
+      "tags": ["Career Development", "Professional Skills"]
+    },
+    {
+      "id": 5,
+      "title": "IEEE Xtreme 18.0 Hackathon",
+      "organizer": "IEEE SBC of IIT",
+      "date": "October 2024",
+      "description": "Participated in this 24-hour global programming competition, solving complex algorithmic challenges and enhancing teamwork skills under tight time constraints.",
+      "image": "src/assets/images/ieee-xtreme.jpeg",
+      "tags": ["Global Competition", "Team Coding", "Problem Solving"]
+    }
+  ],
+
+  "honorsAndAwards": [
+    {
+      "id": 1,
+      "title": "1st Place - Coderally 5.0",
+      "organization": "IEEE Computer Society SBC of IIT",
+      "description": "24hrs Hackathon & Workshop Series",
+      "details": "Innovative problem-solving skills and effective teamwork",
+      "date": "2024"
+    },
+    {
+      "id": 2,
+      "title": "IEEE Xtreme 18.0",
+      "organization": "IEEE SBC of IIT",
+      "description": "24hrs Hackathon",
+      "details": "Team work and coding skills under time constraints",
+      "date": "October 2024"
+    }
+  ],
+
+  "certifications": {
+    "machineLearningAndAI": [
+      {
+        "id": 1,
+        "title": "Machine Learning Specialization",
+        "issuer": "DeepLearning.AI, Stanford",
+        "date": "Jan 2025"
+      },
+      {
+        "id": 2,
+        "title": "Advanced Learning Algorithms",
+        "issuer": "DeepLearning.AI, Stanford",
+        "date": "Jan 2025"
+      },
+      {
+        "id": 3,
+        "title": "Supervised Machine Learning: Regression and Classification",
+        "issuer": "DeepLearning.AI, Stanford",
+        "date": "Jan 2025"
+      },
+      {
+        "id": 4,
+        "title": "Unsupervised Learning: Recommenders, Reinforcement Learning",
+        "issuer": "DeepLearning.AI, Stanford",
+        "date": "Jan 2025"
+      },
+      {
+        "id": 5,
+        "title": "AI for Everyone",
+        "issuer": "DeepLearning.AI",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 6,
+        "title": "Artificial Intelligence Foundations: Machine Learning",
+        "issuer": "LinkedIn",
+        "date": "Dec 2024"
+      },
+      {
+        "id": 7,
+        "title": "AI Python for Beginners",
+        "issuer": "DeepLearning.AI",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 8,
+        "title": "Foundations of Prompt Engineering",
+        "issuer": "AWS",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 9,
+        "title": "GenAI 101 with Pieces",
+        "issuer": "Pieces for Developers",
+        "date": "Feb 2025"
+      }
+    ],
+    "cybersecurity": [
+      {
+        "id": 1,
+        "title": "Foundations of Cybersecurity",
+        "issuer": "Google",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 2,
+        "title": "ISC2 Course Pre-assessment",
+        "issuer": "ISC2",
+        "date": "Feb 2025 - Feb 2028"
+      },
+      {
+        "id": 3,
+        "title": "ISC2 Candidate",
+        "issuer": "ISC2",
+        "date": "Feb 2025 - Feb 2026"
+      },
+      {
+        "id": 4,
+        "title": "Play It Safe: Manage Security Risks",
+        "issuer": "Google",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 5,
+        "title": "Connect and Protect: Networks and Network Security",
+        "issuer": "Google",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 6,
+        "title": "Tools of the Trade: Linux and SQL",
+        "issuer": "Google",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 7,
+        "title": "Assets, Threats, and Vulnerabilities",
+        "issuer": "Google",
+        "date": "Feb 2025"
+      }
+    ],
+    "frameworksAndLanguages": [
+      {
+        "id": 1,
+        "title": "React Essential Training",
+        "issuer": "LinkedIn",
+        "date": "Jan 2025"
+      },
+      {
+        "id": 2,
+        "title": "Programming Fundamentals in Kotlin",
+        "issuer": "Meta",
+        "date": "Feb 2025"
+      },
+      {
+        "id": 3,
+        "title": "Learning Spring 6 with Spring Boot 3",
+        "issuer": "LinkedIn",
+        "date": "Nov 2024"
+      },
+      {
+        "id": 4,
+        "title": "Angular Essential Training",
+        "issuer": "LinkedIn",
+        "date": "Oct 2024"
+      },
+      {
+        "id": 5,
+        "title": "Learning Java 17",
+        "issuer": "LinkedIn",
+        "date": "Oct 2024"
+      },
+      {
+        "id": 6,
+        "title": "Learning Node.js",
+        "issuer": "LinkedIn",
+        "date": "Oct 2024"
+      }
+    ],
+    "other": [
+      {
+        "id": 1,
+        "title": "Postman API Fundamentals Student Expert",
+        "issuer": "Postman",
+        "date": "Feb 2025"
+      }
+    ]
+  },
+
+  "imageAssets": {
+    "profilePicture": "src/assets/images/pp.png",
+    "projectImages": {
+      "emergencyDepartment": "src/assets/images/EDAI.png",
+      "dataAnalyst": "src/assets/images/datagent.png",
+      "chatbot": "src/assets/images/chatbot.png",
+      "diceGame": "src/assets/images/Dice game.png",
+      "slotzi": "src/assets/images/slotzi.png",
+      "movie": "src/assets/images/movie.jpg",
+      "pothole": "src/assets/images/pothole.jpeg",
+      "catDog": "src/assets/images/catdog.jpeg",
+      "gesture": "src/assets/images/hand.jpeg",
+      "ticketing": "src/assets/images/ticket.jpeg",
+      "grades": "src/assets/images/studenta.png",
+      "plane": "src/assets/images/Plane Seat Management.png",
+      "climeta": "src/assets/images/climeta.jpeg"
+    },
+    "workshopImages": {
+      "coderally": "src/assets/images/coderally.jpeg",
+      "careerNavigator": "src/assets/images/career-navigator.jpeg",
+      "algorithmWorkshop": "src/assets/images/algorithm-workshop.jpeg",
+      "ieeeXtreme": "src/assets/images/ieee-xtreme.jpeg",
+      "genAI": "src/assets/images/api-tour.jpeg"
+    }
+  },
+
+  "pages": {
+    "home": {
+      "sections": [
+        "Hero (with profile picture)",
+        "About Me (Who I Am & What I Do)",
+        "Work Experience",
+        "Education",
+        "Technical Skills",
+        "Honors & Awards",
+        "Workshops & Tech Events"
+      ]
+    },
+    "portfolio": {
+      "sections": [
+        "Project Gallery (13 projects total, 2 featured)"
+      ]
+    },
+    "certifications": {
+      "sections": [
+        "Machine Learning & AI (9 certifications)",
+        "Cybersecurity (7 certifications)",
+        "Frameworks & Languages (6 certifications)",
+        "Other Certifications (1 certification)"
+      ]
+    },
+    "contact": {
+      "sections": [
+        "Contact Form (integrated with Formspree)",
+        "Social Links (Email, LinkedIn, GitHub)"
+      ]
+    }
+  }
+}
