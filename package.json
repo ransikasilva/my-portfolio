@@ -3,7 +3,7 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "homepage": "https://ransikasilva.github.io/my-digital-heart-14",
+  "homepage": "https://ransikasilva.github.io/my-portfolio",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
