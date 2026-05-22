@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useEffect, useState } from "react";
 import {
   Outlet,
   Link,
@@ -12,34 +13,68 @@ import appCss from "../styles.css?url";
 import { personal } from "@/data/portfolio";
 import { Mail, Github, Linkedin } from "lucide-react";
 
-function SiteHeader() {
-  const linkBase = "text-sm font-medium hover:text-primary transition-colors";
+function FloatingNav() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const link =
+    "text-sm font-semibold tracking-tight text-foreground/70 hover:text-primary transition-colors";
+
   return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-        <Link to="/" className="font-display font-extrabold text-xl tracking-tight">
-          neethila<span className="text-primary">.</span>
+    <nav
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center rounded-full bg-white/40 backdrop-blur-xl border border-white/40 shadow-lg shadow-black/5 transition-all duration-500 ${
+        scrolled ? "gap-4 px-4 py-2" : "gap-6 px-6 py-3"
+      }`}
+    >
+      <Link to="/" className="flex items-center gap-2 shrink-0" aria-label="Home">
+        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+        <span
+          className={`font-display font-extrabold tracking-tight transition-all duration-500 ${
+            scrolled ? "hidden" : "inline text-sm"
+          }`}
+        >
+          neethila.
+        </span>
+      </Link>
+      <div className="hidden md:flex items-center gap-6">
+        <Link to="/" className={link} activeOptions={{ exact: true }} activeProps={{ className: "!text-primary" }}>
+          Home
         </Link>
-        <nav className="hidden md:flex items-center gap-8">
-          <Link to="/" className={linkBase} activeOptions={{ exact: true }} activeProps={{ className: "text-primary" }}>Home</Link>
-          <Link to="/portfolio" className={linkBase} activeProps={{ className: "text-primary" }}>Portfolio</Link>
-          <Link to="/certifications" className={linkBase} activeProps={{ className: "text-primary" }}>Certifications</Link>
-          <Link to="/contact" className={linkBase} activeProps={{ className: "text-primary" }}>Contact</Link>
-        </nav>
-        <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-4 py-2 text-sm font-medium hover:bg-primary transition-colors">
-          Let's talk
+        <Link to="/portfolio" className={link} activeProps={{ className: "!text-primary" }}>
+          Work
+        </Link>
+        <Link to="/certifications" className={link} activeProps={{ className: "!text-primary" }}>
+          Lab
+        </Link>
+        <Link to="/contact" className={link} activeProps={{ className: "!text-primary" }}>
+          Contact
         </Link>
       </div>
-    </header>
+      <div className="h-4 w-px bg-foreground/10" />
+      <Link
+        to="/contact"
+        className="font-mono text-[10px] font-bold uppercase tracking-widest text-primary hover:text-foreground transition-colors"
+      >
+        Let's talk
+      </Link>
+    </nav>
   );
 }
 
 function SiteFooter() {
   return (
     <footer className="border-t border-border mt-24">
-      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-        <span>© {new Date().getFullYear()} {personal.name}. Built with care.</span>
-        <div className="flex items-center gap-5">
+      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+          © {new Date().getFullYear()} — {personal.name} / Built with care
+        </span>
+        <div className="flex items-center gap-5 text-muted-foreground">
           <a href={`mailto:${personal.email}`} className="hover:text-foreground transition-colors" aria-label="Email"><Mail className="w-4 h-4" /></a>
           <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="LinkedIn"><Linkedin className="w-4 h-4" /></a>
           <a href={personal.github} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="GitHub"><Github className="w-4 h-4" /></a>
@@ -152,8 +187,8 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen flex flex-col bg-background text-foreground">
-        <SiteHeader />
-        <main className="flex-1"><Outlet /></main>
+        <FloatingNav />
+        <main className="flex-1 pt-24"><Outlet /></main>
         <SiteFooter />
       </div>
     </QueryClientProvider>
