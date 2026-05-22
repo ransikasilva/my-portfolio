@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Mail } from "lucide-react";
-import p1 from "@/../assets/project-1.jpg";
-import p2 from "@/../assets/project-2.jpg";
-import p3 from "@/../assets/project-3.jpg";
-import p4 from "@/../assets/project-4.jpg";
-import p5 from "@/../assets/project-5.jpg";
-import p6 from "@/../assets/project-6.jpg";
-import p7 from "@/../assets/project-7.jpg";
-import p8 from "@/../assets/project-8.jpg";
+import p1 from "@/assets/project-1.jpg";
+import p2 from "@/assets/project-2.jpg";
+import p3 from "@/assets/project-3.jpg";
+import p4 from "@/assets/project-4.jpg";
+import p5 from "@/assets/project-5.jpg";
+import p6 from "@/assets/project-6.jpg";
+import p7 from "@/assets/project-7.jpg";
+import p8 from "@/assets/project-8.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
